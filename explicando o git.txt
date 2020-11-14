@@ -1,0 +1,28 @@
+//cria uma pasta a qual vc vai querer fazer o git.
+//entra na pasta desejada 
+//use o comando: 
+#git init 
+// eese comando vai criar uma paste invisivel .guit dentro dessa pasta master
+#cd .git
+//após isso é só ir no sublime criar um arquivo dentro da pasta master pode ser .txt, .html. qualquer coisa  e dps salva
+//va no git
+#git add -A  //irá exportar qualquer arquivo ali feito
+#git status
+//fez uma modificação entao deve ser feito o commit para registrar oq foi feito e sim fazer o backup
+#git commit -m "Primeiro commit meu rodrigo"
+#git log
+// irá aparecer as modificação o numero do log, os arquivos alterados, ou adicionados.
+
+
+
+#git branch
+// vai mostrar o branch que estamos "master"
+
+// Como voltar para o commit desejado excluindo tudo(todos os commits) que foram modificado depois
+
+#git reset --hard 3999e5f3b0bde2533e16a112e32dc24e0254816f
+
+// Como voltar para o commit desejado (id) sem excluir os arquivos que tinham sido alterados... POSSIBILITANDO A EDITAR o arquivo E DPS SALVAR NOVAMENTE
+
+#git reset --soft 3999e5f3b0bde2533e16a112e32dc24e0254816f
+
